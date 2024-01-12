@@ -1,0 +1,12 @@
+.container{
+    background-color: var(--primary-color);
+    height: 80px;
+}
+.menu_link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.logo{
+    width: 58px;
+    height: 69px;
+}
