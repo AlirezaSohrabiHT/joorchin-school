@@ -1,6 +1,8 @@
 .container{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
     height: 80px;
+    overflow: hidden;
+    
 }
 .menu_link{
     color: var(--secondary-color);
@@ -9,4 +11,12 @@
 .logo{
     width: 58px;
     height: 69px;
+    margin-left: 30px;
+}
+.search_img{
+    width: 37px;
+    height: 78;
+    position: absolute;
+    left: -34px;
+    top: 18px;
 }
