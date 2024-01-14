@@ -24,7 +24,7 @@ import { useNavigate } from "react-router-dom";
 
 const pages = ['دوره‌ها', 'مدرسین', 'چرا جورچین؟' , 'وبلاگ' , 'ارتباط با ما'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const Header = () => {
+const Header = (props) => {
     const navigate = useNavigate();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);

@@ -12,8 +12,6 @@
   overflow-y: auto;
   
 }
-<<<<<<< HEAD
-=======
 @font-face {
   font-family: 'Kaghaz-bold';
   src: url("../src/assets/Fonts/Kaghaz Alef Bold.ttf") format('truetype'),
@@ -103,4 +101,3 @@ body{
   font-family: 'Kaghaz-bold', 'Arial' , sans-serif !important;
   background-color: #000000 ;
 }
->>>>>>> 3242eb5d19d9fbd5a7a4a7fa0069fa4f3bfabdb4

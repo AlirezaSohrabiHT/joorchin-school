@@ -29,7 +29,7 @@ const CourseCard = () => {
                 </div>
                 <div>
                     <p>2.000.000 تومان</p>
-                    <Button className={styles.button}variant="contained">مشاهده همه</Button>
+                    <Button className={styles.button}variant="contained">مشاهده دوره</Button>
                 </div>
             </div>
         </div>

@@ -64,6 +64,7 @@
     position: absolute;
     right: -10px;
     width: 150px;
+    animation: customAni 12s ease-in-out 0s infinite normal none;
 }
 .blog_title{
     margin-top: 83px;
@@ -78,3 +79,95 @@
     color: #FFFFFF;
     font-family: 'yekan-bakh-medium';
 }
+.course_text_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.blog_text_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog_button{
+    width: 140px;
+    background-color: var(--fourth-color) !important;
+    color: var(--balck) !important;
+}
+@media only screen and (max-width : 480px) {
+    .main_text{
+        font-size: 18px;
+    }
+    .course_container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .course_text_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .teachers_container_title{
+        font-size: 25px;
+    }
+    .hand{
+        width: 67px;
+        height: 72px;
+
+    }
+    .certificate_container{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .certificate_title{
+        margin-top: 22px;
+        font-size: 18px;
+    }
+    .certificate_desciption{
+        font-size: 12px;
+    }
+    .blog_title{
+        font-size: 18px;
+    }
+    .blog_desciption{
+        font-size: 12px;
+    }
+
+}
+@keyframes customAni {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+    10% {
+      transform: rotate(8deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+  
+    80% {
+      transform: rotate(-8deg);
+    }
+  
+    90% {
+      transform: rotate(8deg);
+    }
+  }
+  

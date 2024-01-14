@@ -66,3 +66,27 @@
   background-color: var(--third-color) !important;
   font-family: 'Yekan-Bakh-Fat' sans-serif;
 }
+@media only screen and (max-width : 480px) {
+  .container{
+    width: 310px;
+    height: 171px;
+  }
+  .course_image{
+    width: 68px;
+    height: 62px;
+  }
+  .course_title{
+    font-size: 14px;
+  }
+  .course_discription{
+    font-size: 9px;
+  }
+  .container_left{
+    font-size: 8px;
+  }
+  .button{
+    width: 70px;
+    height: 24px;
+    font-size: 8px !important;
+  }
+}
