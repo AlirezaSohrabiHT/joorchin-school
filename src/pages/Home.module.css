@@ -13,25 +13,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-color);
-    padding-top: 53px;
+    color: #00EA6B;
+    padding-top: 40px;
 }
 .main_text{
     font-size: 40px;
 }
 .course_container{
-    margin-top: 18px;
+    margin-top: 27px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--secondary-color);
+    padding-top: 27px;
 }
 .teachers_container{
     margin-top: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-color);
+    color: #00ea6b;
     font-size: 60px;
 }
 .certificate_container{
@@ -63,4 +64,17 @@
     position: absolute;
     right: -10px;
     width: 150px;
+}
+.blog_title{
+    margin-top: 83px;
+
+    color: #00EA6B;
+    font-size: 50px;
+}
+.blog_desciption{
+    margin-top: 5px;
+
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: 'yekan-bakh-medium';
 }
