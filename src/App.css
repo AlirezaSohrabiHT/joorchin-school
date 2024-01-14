@@ -6,7 +6,8 @@
   --secondary-color: #FFFFFF;
   --third-color: #6531FF;
   --fourth-color: #00EA6B;
-  background-color: var(--primary-color);
+  --balck: #000;
+  background-color: var(--balck);
   overflow-x: hidden;
   overflow-y: auto;
   

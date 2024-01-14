@@ -19,9 +19,13 @@ import AdbIcon from '@mui/icons-material/Adb';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import { useNavigate } from "react-router-dom";
+
+
 const pages = ['دوره‌ها', 'مدرسین', 'چرا جورچین؟' , 'وبلاگ' , 'ارتباط با ما'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const Header = () => {
+    const navigate = useNavigate();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
   
@@ -38,6 +42,27 @@ const Header = () => {
   
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
+    };
+    const handleNavigation = (page) => {
+      switch (page) {
+        case "دوره‌ها":
+          navigate("/Course");
+          break;
+        case "مدرسین":
+          navigate("/Teachers");
+          break;
+        case "چرا جورچین؟":
+          navigate("/WhyJoorchin");
+          break;
+        case "وبلاگ":
+          navigate("/Blog");
+          break;
+        case "ارتباط با ما":
+          navigate("/Contactus");
+          break;
+        default:
+          // Handle default case or do nothing
+      }
     };
     const Search = styled('div')(({ theme }) => ({
         position: 'relative',
@@ -84,49 +109,11 @@ const Header = () => {
         },
       }));
     return (
-        // <>
-        //     <div className={`container ${styles.container}`}>
-        //        <div className={`row`}>
-        //         <div className={`col-6 `}>
-        //             <img src={logo} href="logo"></img>
-        //             <a className={`${styles.menu_link}`}>دوره ها</a>
-        //             <a className={`${styles.menu_link}`}>مدرسین</a>
-        //             <a className={`${styles.menu_link}`}> چرا جورچین؟</a>
-        //             <a className={`${styles.menu_link}`}> درباره ما</a>
-        //             <a className={`${styles.menu_link}`}>ارتباط با ما</a>
-        //         </div>
-        //         <div className={`col-3`}>
-
-        //         </div>  
-        //         <div className={`col-3`}>
-        //             <img src={search} href="search"></img>
-        //         </div>
-        //        </div>
-        //     </div>
-        // </>
+        <div className={styles.back}>
         <AppBar position="static" className={`container ${styles.container}`}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <img className={styles.logo} src={logo} href="logo"></img>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-            {/* <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography> */}
-  
+            <img onClick={()=>navigate("/")} className={styles.logo} src={logo} href="logo"></img>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
                 size="large"
@@ -164,30 +151,11 @@ const Header = () => {
               </Menu>
               
             </Box>
-            {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-            {/* <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography> */}
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => handleNavigation(page)}
                   sx={{ my: 2, color: 'white', display: 'block' , fontSize: '20px' }}
                 >
                   {page}
@@ -205,38 +173,10 @@ const Header = () => {
             />
           </Search>
           <img className={styles.search_img} src={search} href="search"></img>
-            {/* <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                </IconButton>
-              </Tooltip>
-              <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>
+      </div>
     )
 }
 

@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 591px;
+    background-image: url("../assets/Contact-us.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.hand{
+    position: absolute;
+    right: 10vw;
+    bottom: 0;
+}
+.contact_us{
+    display: flex;
+    color: var(--secondary-color);
+    gap: 20px;
+}
+
+.title{
+    margin-top: 60px;
+    font-size: 60px;
+    color: var(--secondary-color);
+}

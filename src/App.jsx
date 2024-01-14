@@ -10,17 +10,23 @@ import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
+import Whyjoorchin from "../src/pages/Whyjoorchin";
+import Blog from "../src/pages/Blog";
 function App() {
 
   return (
     <>
-        <Header/>
+       
         <BrowserRouter>
+        <Header/>
           <Routes>
           <Route path="/" element={ <Home/>}/>
           <Route path='Contactus' element={<Contactus/>}/>
+          <Route path='Course' element={<Course/>}/>
           <Route path='Teachers' element={<Teachers/>}/>
           <Route path='Archive' element={<Archive/>}/>
+          <Route path='WhyJoorchin' element={<Whyjoorchin/>}/>
+          <Route path='Blog' element={<Blog/>}/>
           {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </BrowserRouter>

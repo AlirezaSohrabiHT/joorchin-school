@@ -5,6 +5,7 @@ import { X , Telegram , Instagram , Email , WhatsApp } from "@mui/icons-material
 const Footer = () => {
     return(
         <>
+        <div className={styles.back}>
         <div className={`container ${styles.footer_container}`}>
             <div className={`row`}>
                 <div className={`col-5`}>
@@ -46,6 +47,7 @@ const Footer = () => {
                     <img src={joorchin_logo}/>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )

@@ -1,6 +1,7 @@
 .footer_container{
     margin-top: 121px;
     color: var(--secondary-color);
+   
 }
 .footer_menu{
     display: flex;
@@ -13,4 +14,8 @@
     justify-content: end;
     font-family: 'Yekan-Bakh-Light',Arial, Helvetica, sans-serif;
     font-size: 10px;
+}
+.back{
+    width: 100%;
+    background-color: var(--primary-color);
 }
