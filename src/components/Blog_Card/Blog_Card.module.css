@@ -1,9 +1,9 @@
 .container{
     border: 0.5px solid var(--secondary-color);
     display: flex;
-    width: 413px;
-    height: 229px;
-    border-radius: 10px;
+    width: 379px;
+    height: 385px;
+    border-radius: 10px 0px 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -40,21 +40,19 @@
 .container::after {
     filter: blur(30px);
 }
-.container_right{
-    text-align: justify;
-    width: 60%;
-}
-.course_image{
-    width: 90px;
-    height: 83px;
+
+.Blog_image{
+    width: 343px;
+    height: 200px;
     border-radius: 5px;
 }
-.course_title{
+.blog_title{
     font-size: 23px;
+    color: var(--fourth-color);
 }
-.course_discription{
-    font-size: 12.5px;
-    font-family: 'yekanbakhmedium', sans-serif;
+.blog_name{
+    font-size: 15px;
+    font-family: 'yekanbakhRegular', sans-serif;
   }
 
 .container_left{

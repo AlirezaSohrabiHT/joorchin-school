@@ -14,7 +14,7 @@ const CourseCard = () => {
                 <h2 className={styles.course_title}>دوره برنامه نویسی جنگو</h2>
                 <p className={styles.course_discription}>در طول دوره آموزش جنگو (Django) ما سعی می‌کنیم این فریمورک محبوب و پر استفاده پایتونی را قدم به قدم به شکل کامل به شما آموزش دهیم.</p>
             </div>
-            <div>
+            <div className={styles.container_left}>
                 <p>مدرس : الناز زارع</p>
                 <p>سطح مقدماتی</p>
                 <div>
@@ -29,7 +29,7 @@ const CourseCard = () => {
                 </div>
                 <div>
                     <p>2.000.000 تومان</p>
-                    <Button variant="contained">مشاهده همه</Button>
+                    <Button className={styles.button}variant="contained">مشاهده همه</Button>
                 </div>
             </div>
         </div>

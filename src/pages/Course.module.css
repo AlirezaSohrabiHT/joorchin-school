@@ -1,0 +1,25 @@
+.text_up{
+    width: 533px;
+    height: 127px;
+    background-image: url('../assets/white_back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--third-color);
+}
+.text_down{
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+.text_container{
+    display: flex;
+    flex-direction: column;
+}
+.up_container{
+    margin-top: 137px !important;
+    display: flex;
+}
