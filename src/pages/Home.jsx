@@ -61,9 +61,11 @@ const Home = () => {
                 <div className={`col-12 ${styles.teachers_container} `}>
                     <img className={styles.hand} src={hand}/>
                     <p className={styles.teachers_container_title}>همکاران جورچین</p>
-                    
                 </div>
+                <div className={`container-fluid`}>
                 <TeacherBox/>
+                </div>
+
             </div>
             <div className={`row ${styles.certificate_container}`}>
                 <div className={`col-md-6 col-12 `}>

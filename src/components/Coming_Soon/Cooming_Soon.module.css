@@ -1,0 +1,14 @@
+.main_cintainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.back{
+}
+.earth{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

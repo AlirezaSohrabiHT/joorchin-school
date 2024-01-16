@@ -10,7 +10,12 @@
   background-color: var(--balck);
   overflow-x: hidden;
   overflow-y: auto;
+  a { color: inherit; cursor: pointer; text-decoration: none; } 
+
   
+}
+#root{
+  overflow: hidden !important;
 }
 @font-face {
   font-family: 'Kaghaz-bold';

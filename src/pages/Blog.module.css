@@ -5,4 +5,5 @@
     color: var(--secondary-color);
     margin-top: 150px;
     font-size: xx-large;
+    position: relative;
 }

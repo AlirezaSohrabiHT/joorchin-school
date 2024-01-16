@@ -1,3 +1,6 @@
 body{
   background-color: var(--balck);
 }
+#root{
+  overflow: hidden !important;
+}

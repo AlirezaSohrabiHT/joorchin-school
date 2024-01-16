@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-around;
     position: relative;
+    flex-direction: column;
     
 }
 .animatedContainer::before,
@@ -47,6 +48,7 @@
     border-radius: 5px;
 }
 .blog_title{
+    margin-top: 15px;
     font-size: 23px;
     color: var(--fourth-color);
 }
@@ -63,4 +65,17 @@
 .button{
   background-color: var(--third-color) !important;
   font-family: 'Yekan-Bakh-Fat' sans-serif;
+}
+.blog_discription_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom_container{
+  width: 90%;
+}
+.icon_container{
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }

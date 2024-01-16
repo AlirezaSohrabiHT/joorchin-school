@@ -165,7 +165,7 @@ const Header = (props) => {
             </Box>
             <Search>
             <SearchIconWrapper>
-              <SearchIcon />
+              {/* <SearchIcon /> */}
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="دنبال چی میگردی ؟"

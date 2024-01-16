@@ -16,7 +16,8 @@ const TeacherBox = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    rtl: true
+    rtl: true,
+    arrows: false,
   };
   const settings2 = {
     dots: false,
@@ -26,7 +27,8 @@ const TeacherBox = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
+    arrows: false,
   };
   const settings3 = {
     dots: false,
@@ -37,11 +39,12 @@ const TeacherBox = () => {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    rtl: true
+    rtl: true,
+    arrows: false,
   };
 
   return (
-    <div>
+    <div className={styles.main}>
       <Slider ref={sliderRef} {...settings}>
         <div style= {styles.container}>
           <img src={image}/>

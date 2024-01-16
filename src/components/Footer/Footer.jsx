@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import joorchin_logo from "../../assets/Joorchin_logo.svg"
-import { X , Telegram , Instagram , Email , WhatsApp } from "@mui/icons-material";
+import logo from "../../assets/Logo.svg"
+import { X , Telegram , Instagram , Email , WhatsApp, Margin } from "@mui/icons-material";
 const Footer = () => {
     return(
         <>
         <div className={styles.back}>
         <div className={`container ${styles.footer_container}`}>
             <div className={`row`}>
-                <div className={`col-5`}>
+                <div className={`col-5 ${styles.footer_right}`}>
                     <div className={styles.footer_menu}>
                         <a>دوره ها</a>
                         <a>مدرسین</a>
@@ -16,8 +17,8 @@ const Footer = () => {
                         <a>وبلاگ</a>
                         <a>ارتباط با ما</a>
                     </div>
-                    <div>
-                        <img/>
+                    <div className={styles.footer_discription}>
+                        <img src={logo}/>
                         <p>جورچین آکادمی مدرسه ای پر از  خلاقیت خیلی زیاد  هنرجو های عالی استاد های شگفت انگیز بی نظیر اصلا
                         قابل وصف نیست ثبتنام کنیدیکهفتهایبهدرآمد برسید.</p>
                     </div>
@@ -25,15 +26,19 @@ const Footer = () => {
                 <div className={`col-2`}>
 
                 </div>
-                <div className={`col-5`}>
-                    <p>اطلاع از خبر های جدید جورچین آکادمی</p>
-                    <p>با ما دوست باشید</p>
+                <div className={`col-5 ${styles.footer_left}`}>
+                    <p >اطلاع از خبر های جدید جورچین آکادمی</p>
+                    <input className={styles.footer_input} placeholder="ایمیل خود را وارد کنید" type="email" id="name" name="name" required minlength="4" maxlength="8" size="10" />
                     <div>
-                        <Telegram/>
+                      <p className={`mt-3 `}>با ما دوست باشید</p>
+                      <div className={styles.icon_container}>
+                      <Telegram/>
                         <X/>
-                        <Instagram/>
+                       <a href="https://www.instagram.com/joorchin.school?igsh=NTc4MTIwNjQ2YQ=="><Instagram/></a> 
                         <Email/>
-                        <WhatsApp/>  
+                        <WhatsApp/> 
+                      </div>
+  
                     </div>
                 </div>
             </div>
@@ -43,7 +48,7 @@ const Footer = () => {
 
                 </div>
                 <div className={`col-5 ${styles.footer_copyright_container}`}>
-                    <a>Joorchin Digital Marketing Agency - بازنشر مطالب فقط با ذکر منبع مجاز می‌باشد</a>
+                    <a href="https://joorchin.co/">Joorchin Digital Marketing Agency - بازنشر مطالب فقط با ذکر منبع مجاز می‌باشد</a>
                     <img src={joorchin_logo}/>
                 </div>
             </div>
