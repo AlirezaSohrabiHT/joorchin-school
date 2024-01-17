@@ -17,6 +17,7 @@
     background-position: center;
     background-size: contain;
     position: relative;
+    flex-direction: column;
 }
 
 .hand{
@@ -26,12 +27,29 @@
 }
 .contact_us{
     display: flex;
-    color: var(--secondary-color);
+    color: var(--white);
     gap: 20px;
 }
 
 .title{
     margin-top: 60px;
     font-size: 60px;
-    color: var(--secondary-color);
+    color: var(--white);
+}
+.data_container{
+    display: flex;
+    color: var(--white);
+}
+.label{
+    color: var(--green);
+}
+.number_container{
+    width: 50%;
+}
+.input{
+    border-radius: 15px;
+}
+.input_container{
+    display: flex;
+    flex-direction: column;
 }

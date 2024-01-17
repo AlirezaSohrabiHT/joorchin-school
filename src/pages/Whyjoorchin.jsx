@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Whyjoorchin.module.css"
+import Comingsoon from "../components/Coming_Soon/Cooming_Soon";
+
 const WhyJoorchin = () => {
     return(
         <>
-        <div className={`container`}>
+        <div className={`container_fluid`}>
             <div className={`row`}>
                 <div className={`col-12 ${styles.temp}`}>
-                    <p>why joorchin</p>
+                        <Comingsoon/>
                 </div>
             </div>
         </div>

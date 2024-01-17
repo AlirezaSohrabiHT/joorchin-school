@@ -12,8 +12,16 @@ import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
 import Whyjoorchin from "../src/pages/Whyjoorchin";
 import Blog from "../src/pages/Blog";
+import Loading from "../src/components/Loading/Loading";
+import { useEffect, useState } from 'react';
 function App() {
-
+  const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 3300)
+    }, [])
+    if (loading) {
+        return <Loading/>
+    }
   return (
     <>
        

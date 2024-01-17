@@ -1,5 +1,5 @@
 .container{
-    border: 0.5px solid var(--secondary-color);
+    border: 0.5px solid var(--white);
     display: flex;
     width: 379px;
     height: 385px;
@@ -50,7 +50,7 @@
 .blog_title{
     margin-top: 15px;
     font-size: 23px;
-    color: var(--fourth-color);
+    color: var(--green);
 }
 .blog_name{
     font-size: 15px;
@@ -63,7 +63,7 @@
 
 }
 .button{
-  background-color: var(--third-color) !important;
+  background-color: var(--purple) !important;
   font-family: 'Yekan-Bakh-Fat' sans-serif;
 }
 .blog_discription_container{

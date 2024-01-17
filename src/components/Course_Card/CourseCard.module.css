@@ -1,5 +1,5 @@
 .container{
-    border: 0.5px solid var(--secondary-color);
+    border: 0.5px solid var(--white);
     display: flex;
     width: 413px;
     height: 229px;
@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-around;
     position: relative;
+    color: var(--white);
     
 }
 .animatedContainer::before,
@@ -63,7 +64,7 @@
 
 }
 .button{
-  background-color: var(--third-color) !important;
+  background-color: var(--purple) !important;
   font-family: 'Yekan-Bakh-Fat' sans-serif;
 }
 @media only screen and (max-width : 480px) {

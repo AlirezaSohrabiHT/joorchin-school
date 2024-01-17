@@ -11,23 +11,26 @@ const Comingsoon = () => {
         <>
         <img  className={styles.back} src={back}/>
         <div className={styles.main_cintainer}>
-            <div>
+            <div className={styles.detail_container}>
           
-                <p>درهای مدرسه به زودی باز میشه !</p>
-                <div>
-                    <Telegram/>
-                    <X/>
-                    <LinkedIn/>
-                    <Instagram/>
-                    <WhatsApp/>
+                <p className={styles.title}>درهای مدرسه به زودی باز میشه !</p>
+                <div className={styles.social_container}>
+                    <Telegram className={styles.icon}/>
+                    <X className={styles.icon}/>
+                    <LinkedIn className={styles.icon}/>
+                    <Instagram className={styles.icon}/>
+                    <WhatsApp className={styles.icon}/>
                 </div>
-                <img src={fibido}/>
-                <p>Joorchin Digital Marketing Agency</p>
+                <img src={fibido} className={styles.fibido}/>
+   
             </div>
         
         </div>
+        <p className={styles.copyright}>Joorchin Digital Marketing Agency</p>
         <img className={styles.earth} src={earth}/>
         <img className={styles.plant} src={planet}/>
+        <img className={styles.plant2} src={planet}/>
+        <img className={styles.plant3} src={planet}/>
         </>
     )
 }

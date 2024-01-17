@@ -1,5 +1,5 @@
 body{
-  background-color: var(--balck);
+  background-color: var(--black);
 }
 #root{
   overflow: hidden !important;

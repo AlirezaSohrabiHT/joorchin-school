@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Teachers.module.css";
+import Comingsoon from "../components/Coming_Soon/Cooming_Soon";
 
 const Teachers = () =>{
     return(
         <>
-        <div className={`container`}>
+        <div className={`container_fluid`}>
             <div className={`row`}>
                 <div className={`col-12 ${styles.temp}`}>
-                    <p>Teachers</p>
+                        <Comingsoon/>
                 </div>
             </div>
         </div>

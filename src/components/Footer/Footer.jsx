@@ -27,7 +27,7 @@ const Footer = () => {
 
                 </div>
                 <div className={`col-5 ${styles.footer_left}`}>
-                    <p >اطلاع از خبر های جدید جورچین آکادمی</p>
+                    <p>اطلاع از خبر های جدید جورچین آکادمی</p>
                     <input className={styles.footer_input} placeholder="ایمیل خود را وارد کنید" type="email" id="name" name="name" required minlength="4" maxlength="8" size="10" />
                     <div>
                       <p className={`mt-3 `}>با ما دوست باشید</p>

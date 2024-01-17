@@ -2,21 +2,18 @@
   direction: rtl;
   margin: 0;
   padding: 0;
-  --primary-color: #333333;
-  --secondary-color: #FFFFFF;
-  --third-color: #6531FF;
-  --fourth-color: #00EA6B;
-  --balck: #000;
-  background-color: var(--balck);
+  --dark: #333333;
+  --white: #FFFFFF;
+  --purple: #6531FF;
+  --green: #00EA6B;
+  --black: #000;
+  background-color: var(--black);
   overflow-x: hidden;
   overflow-y: auto;
+  color: var(--white);
   a { color: inherit; cursor: pointer; text-decoration: none; } 
+}
 
-  
-}
-#root{
-  overflow: hidden !important;
-}
 @font-face {
   font-family: 'Kaghaz-bold';
   src: url("../src/assets/Fonts/Kaghaz Alef Bold.ttf") format('truetype'),

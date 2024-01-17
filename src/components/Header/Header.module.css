@@ -1,5 +1,5 @@
 .container{
-    background-color: var(--primary-color) !important;
+    background-color: var(--dark) !important;
     height: 80px;
     overflow: hidden;
     box-shadow: none !important;
@@ -7,10 +7,10 @@
 }
 .back{
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--dark);
 }
 .menu_link{
-    color: var(--secondary-color);
+    color: var(--white);
     text-decoration: none;
 }
 .logo{

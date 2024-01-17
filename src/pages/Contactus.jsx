@@ -30,6 +30,36 @@ const Contactus = () => {
                                 <Instagram/>
                             </div>
                         </div>
+                        <div className={styles.data_container}>
+                            <div className={styles.number_container}>
+                                <div>
+                                    <p className={styles.label}>شماره تماس جورچین</p>
+                                    <p>05138012312-09151231231</p>
+                                </div>
+                                <div>
+                                    <p className={styles.label}>آدرس دفتر جورچین</p>
+                                    <p>مشهد-هاشمیه،سامانیه ۱۱، پلاک ۱۱</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p className={styles.label}>فرم ارتباط با ما</p>
+                                    <p>در کنار روش‌های که  برای ارتباط با جورچین در نظر گرفته‌ایم،شما همچنین می‌توانید از طریق فرم زیر  پیام خود را برای ما ارسال کنید.</p>
+                                </div>
+                                <div>
+                                    <div className={styles.input_container}>
+                                        <label>نام شما:</label>
+                                        <input className={styles.input} type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+                                        <label>متن پیام:</label>
+                                        <input className={styles.input}  type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+                                    </div>
+                                    <div className={styles.input_container}>
+                                    <label>آدرس ایمیل:</label>
+                                        <input className={styles.input}  type="email" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div>
 
                         </div>
