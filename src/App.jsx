@@ -14,6 +14,7 @@ import Whyjoorchin from "../src/pages/Whyjoorchin";
 import Blog from "../src/pages/Blog";
 import Loading from "../src/components/Loading/Loading";
 import { useEffect, useState } from 'react';
+import Page404 from './components/Page404/Page404';
 function App() {
   const [loading, setLoading] = useState(true)
     useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
           <Route path='Archive' element={<Archive/>}/>
           <Route path='WhyJoorchin' element={<Whyjoorchin/>}/>
           <Route path='Blog' element={<Blog/>}/>
+          <Route path='temp' element={<Page404 />} />
           {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </BrowserRouter>
