@@ -1,0 +1,157 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.peeek_loading {
+    background-color: #333333;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.peeek_loading ul {
+    list-style: none;
+    position: absolute;
+    left: calc(50% - 0.7em);
+    top: calc(50% - 4.2em);
+    display: inline-block;
+    text-indent: 2.8em; /* Adjusted for 2 * $size */
+}
+
+.peeek_loading ul li:after,
+.peeek_loading ul:after {
+    width: 1.4em; /* Adjusted for $size */
+    height: 1.4em; /* Adjusted for $size */
+    background-color: #fff;
+    border-radius: 100%;
+    content: "";
+    display: block;
+}
+
+.peeek_loading ul:after {
+    /* position: absolute;
+    top: 2.8em;  */
+}
+
+.peeek_loading li {
+    position: absolute;
+    padding-bottom: 5.6em; /* Adjusted for 4 * $size */
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.peeek_loading li:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: 0.25s;
+}
+.peeek_loading li:nth-child(1):after {
+    animation-delay: 0.25s;
+}
+
+.peeek_loading li:nth-child(2) {
+    transform: rotate(36deg);
+    animation-delay: 0.5s;
+}
+.peeek_loading li:nth-child(2):after {
+    animation-delay: 0.5s;
+}
+
+.peeek_loading li:nth-child(3) {
+    transform: rotate(72deg);
+    animation-delay: 0.75s;
+}
+.peeek_loading li:nth-child(3):after {
+    animation-delay: 0.75s;
+}
+
+.peeek_loading li:nth-child(4) {
+    transform: rotate(108deg);
+    animation-delay: 1s;
+}
+.peeek_loading li:nth-child(4):after {
+    animation-delay: 1s;
+}
+
+.peeek_loading li:nth-child(5) {
+    transform: rotate(144deg);
+    animation-delay: 1.25s;
+}
+.peeek_loading li:nth-child(5):after {
+    animation-delay: 1.25s;
+}
+
+.peeek_loading li:nth-child(6) {
+    transform: rotate(180deg);
+    animation-delay: 1.5s;
+}
+.peeek_loading li:nth-child(6):after {
+    animation-delay: 1.5s;
+}
+
+.peeek_loading li:nth-child(7) {
+    transform: rotate(216deg);
+    animation-delay: 1.75s;
+}
+.peeek_loading li:nth-child(7):after {
+    animation-delay: 1.75s;
+}
+
+.peeek_loading li:nth-child(8) {
+    transform: rotate(252deg);
+    animation-delay: 2s;
+}
+.peeek_loading li:nth-child(8):after {
+    animation-delay: 2s;
+}
+
+.peeek_loading li:nth-child(9) {
+    transform: rotate(288deg);
+    animation-delay: 2.25s;
+}
+.peeek_loading li:nth-child(9):after {
+    animation-delay: 2.25s;
+}
+
+.peeek_loading li:nth-child(10) {
+    transform: rotate(324deg);
+    animation-delay: 2.5s;
+}
+.peeek_loading li:nth-child(10):after {
+    animation-delay: 2.5s;
+}
+
+
+.peeek_loading li {
+    animation: dotAnimation 2.5s infinite;
+}
+
+@keyframes dotAnimation {
+    0%, 55%, 100% {
+        padding: 0 0 5.6em 0; /* Adjusted for 4 * $size */
+    }
+    5%, 50% {
+        padding: 2.8em 0; /* Adjusted for 2 * $size */
+    }
+}
+
+.peeek_loading li:after {
+    animation: dotAnimationTwo 2.5s infinite;
+}
+
+@keyframes dotAnimationTwo {
+    0%, 55%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    5%, 50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+}
