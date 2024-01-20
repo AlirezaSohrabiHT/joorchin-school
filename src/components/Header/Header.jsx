@@ -66,11 +66,9 @@ const Header = (props) => {
     };
     const Search = styled('div')(({ theme }) => ({
         position: 'relative',
-        borderRadius: theme.shape.borderRadius,
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
-        '&:hover': {
-          backgroundColor: alpha(theme.palette.common.white, 0.25),
-        },
+        borderRadius: '25px',
+        border: '2px solid #fff',
+        backgroundColor: '#333',
         marginLeft: "37px",
         width: '100%',
         [theme.breakpoints.up('sm')]: {
@@ -92,8 +90,7 @@ const Header = (props) => {
       }));
       
       const StyledInputBase = styled(InputBase)(({ theme }) => ({
-        color: 'inherit',
-        
+        color: 'inherit',  
         width: '100%',
         '& .MuiInputBase-input': {
           padding: theme.spacing(1, 1, 1, 0),
@@ -156,7 +153,7 @@ const Header = (props) => {
                 <Button
                   key={page}
                   onClick={() => handleNavigation(page)}
-                  sx={{ my: 2, color: 'white', display: 'block' , fontSize: '20px' }}
+                  sx={{ my: 2, ml: 1, color: 'white', display: 'block' , fontSize: '20px', fontFamily: 'Kaghaz-bold' }}
                 >
                   {page}
                 </Button>
@@ -164,10 +161,8 @@ const Header = (props) => {
               
             </Box>
             <Search>
-            <SearchIconWrapper>
-              {/* <SearchIcon /> */}
-            </SearchIconWrapper>
             <StyledInputBase
+              sx={{fontFamily: 'Yekan-Bakh-Regular'}}
               placeholder="دنبال چی میگردی ؟"
               inputProps={{ 'aria-label': 'search' }}
             />

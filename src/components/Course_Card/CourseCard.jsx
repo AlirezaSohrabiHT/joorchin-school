@@ -3,7 +3,8 @@ import styles from "./CourseCard.module.css"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import FolderIcon from '@mui/icons-material/Folder';
 import Button from '@mui/material/Button';
-import image from '../../assets/Cardtemp.png'
+import image from '../../assets/Cardtemp.png';
+import divider from '../../assets/Vector 16.svg';
 const CourseCard = () => {
 
     return(
@@ -29,7 +30,7 @@ const CourseCard = () => {
                 </div>
                 <div>
                     <p>2.000.000 تومان</p>
-                    <Button className={styles.button}variant="contained">مشاهده دوره</Button>
+                    <Button sx={{fontFamily: 'Kaghaz-bold', fontSize: '15px'}} className={styles.button}variant="contained">مشاهده دوره</Button>
                 </div>
             </div>
         </div>

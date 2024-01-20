@@ -37,24 +37,22 @@ const Home = () => {
             <div className={`row`}>
                 <div className={`col-12 ${styles.main_text_container}`}>
                     <p className={`${styles.main_text}`}>مدرسه خلاقیت جورچین</p>
-                    <p className={`${styles.main_text}`}>همه قفل ها را باز می کند برای خلاق بودن با هم یاد میگیریم.</p>
+                    <p className={`${styles.main_text} ${styles.main_text_white}`}>همه قفل ها را باز می کند برای خلاق بودن با هم یاد میگیریم.</p>
                 </div>
             </div>
         </div>
-        <div className={`container`}>
-            <div className={`row`}>
+        <div className={`container `}>
+            <div className={`row`}> 
                 <div className={`col-12 ${styles.course_container}`}>
-                    <div className={styles.course_text_container}>
+                    <div className={styles.course_container_header}>
                     <p>جدیدترین دوره ها</p>
                     <Button variant="contained">مشاهده همه</Button>
                     </div>
-                </div>
-            </div>
-            <div className={`row`}>
-                <div className={`col-12 ${styles.course_container}`}>
-                    <CourseCard/>
-                    <CourseCard/>
-                    <CourseCard/>
+                    <div className={styles.course_container_cards}>
+                        <CourseCard/>
+                        <CourseCard/>
+                        <CourseCard/>
+                    </div>
                 </div>
             </div>
             <div className={`row`}>
