@@ -36,6 +36,7 @@ function App() {
           <Route path='Archive' element={<Archive/>}/>
           <Route path='WhyJoorchin' element={<Whyjoorchin/>}/>
           <Route path='Blog' element={<Blog/>}/>
+          <Route path='temp' element={<Loading/>}/>
           <Route path="*" element={<Page404/>} />
           </Routes>
         </BrowserRouter>

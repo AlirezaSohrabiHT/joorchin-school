@@ -6,7 +6,20 @@ const loading = () => {
         <div className={`container`}>
             <div className={`row`}>
                 <div className={`col-12`}>
-                    <p>Loading</p>
+                    <div className={styles.peeek_loading}>
+                        <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
