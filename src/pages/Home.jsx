@@ -79,19 +79,17 @@ const Home = () => {
                 <div className={`row ${styles.blog_container}`}>
                 <div className={`col-md-12 col-12 ${styles.blog_text_container}`}>
                     <div>
-                    <p className={styles.blog_title}>متن راجع به وبلاگ</p>
-                    <p className={styles.blog_desciption}>متن متن متن متن متن راجع به وبلاگ</p>
+                        <p className={styles.blog_title}>متن راجع به وبلاگ</p>
+                        <p className={styles.blog_desciption}>متن متن متن متن متن راجع به وبلاگ</p>
                     </div>
-                    <Button className={`${styles.blog_button}`} variant="contained">مشاهده همه بلاگ ها</Button>
+                        <Button className={`${styles.blog_button}`} variant="contained">مشاهده همه بلاگ ها</Button>
                 </div>
+                    <div className={`col-12 ${styles.blog_cards}`}>
+                        <Blog_Card/>
+                        <Blog_Card/>
+                        <Blog_Card/>
+                    </div>
                 </div>
-                <div className={`row`}>
-                <div className={`col-12 ${styles.course_container}`}>
-                    <Blog_Card/>
-                    <Blog_Card/>
-                    <Blog_Card/>
-                </div>
-            </div>
             </div>
         </div>
         </>
