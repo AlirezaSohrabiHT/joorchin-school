@@ -11,37 +11,173 @@
     padding: 0;
     font-size: xx-large;
     position: relative;
+
+    background: url("../../assets/bgstars.svg") center center no-repeat;
+    background-size: cover;
 }
 
-.title {
+/* Start --------------- Top row --------------- */
+
+.top_row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    direction: ltr;
+}
+
+.fibido_img {
+    position: relative;
+    z-index: 100000;
+    transform: translate(7.5px, 20px);
+
+    width: 112px;
+    height: 186px;
+}
+
+.tether_img {
+    position: absolute;
+    bottom: -35%;
+    right: -20%;
+}
+
+.rocket_img {
+    position: absolute;
+    bottom: 0;
+    right: -40%;
+}
+
+/* End --------------- Top row --------------- */
+
+/* Start --------------- Center row --------------- */
+
+.center_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_num {
+    transform: translateX(20px);
+}
+
+.right_num {
+    transform: translateX(-20px);
+}
+
+.earth_img {
+    position: relative;
+    z-index: 10000;
+}
+
+/* End --------------- Center row --------------- */
+
+/* Start --------------- Bottom row --------------- */
+
+.bottom_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 42px;
+}
+
+.bottom_row > p {
     color: var(--green);
     font-size: 60px;
 }
 
-.button_group {
+.bottom_row > div.links_group {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.button_group > a {
+.bottom_row > div.links_group > a {
     width: 137px;
     height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
     border: 0.5px solid #fff;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
     color: #fff;
 }
 
-.image_group {
-    margin-left: 100%;
-    bottom: 25%;
+/* End --------------- Bottom row --------------- */
+
+/* Start --------------- Planet layout --------------- */
+
+.right_bottom_planet {
+    position: absolute;
+    right: 6%;
+    bottom: 6%;
+    transform: scale(0.5);
 }
 
-.tether {
-    transform: rotate(-11.322deg);
-    margin-bottom: -50%;
-    margin-left: -5%;
+.center_bottom_planet {
+    position: absolute;
+    bottom: 0;
+    left: 34.5%;
+    transform: scale(0.125);
 }
+
+.left_bottom_planet {
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    transform: scale(0.4);
+}
+
+.center_top_planet {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: scale(0.25);
+}
+
+/* End --------------- Planet layout --------------- */
+
+/* Start --------------- Responsive Design --------------- */
+
+@media screen and (max-width: 480px) {
+    .fibido_img {
+        width: 96px;
+        height: 160px;
+    }
+    .earth_img {
+        width: 108px;
+    }
+    .right_num,
+    .left_num {
+        width: 98px;
+        height: 124px;
+    }
+    .bottom_row {
+        margin-top: 13px;
+    }
+    .bottom_row > p {
+        font-size: 40px;
+    }
+    .bottom_row > div.links_group > a {
+        width: 92px;
+        height: 27.591px;
+        line-height: 27.591px;
+        font-size: 15px;
+    }
+    .tether_img {
+        width: 145.553px;
+        height: 64.298px;
+        transform: rotate(-15deg);
+        right: -1%;
+        bottom: 0;
+    }
+    .rocket_img {
+        width: 61.092px;
+        height: 57.218px;
+        right: -12.5%;
+        bottom: 30%;
+    }
+}
+
+/* End --------------- Responsive Design --------------- */

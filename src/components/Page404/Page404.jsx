@@ -2,9 +2,10 @@ import React from "react";
 import styles from './Page404.module.css';
 import earth from '../../assets/planet-13.svg';
 import number4 from '../../assets/4-left.svg';
-import layer_1 from '../../assets/Layer_1.svg';
+import fibido from '../../assets/fibido.svg';
 import tether from '../../assets/tether.svg';
 import rocket from '../../assets/Rocket.svg';
+import planet from '../../assets/planet-14.svg';
 
 const Page404 = () => {
 
@@ -12,28 +13,30 @@ const Page404 = () => {
         <>
             <div className={`container-fluid`}>
                 <div className={`row`}>
-                    <div className={`col-12 ${styles.temp}`} dir="ltr">
+                    <div className={`col-12 ${styles.temp}`}>
                         <div>
-                            <div>
-                                <img src={layer_1} className={`${styles.layer_1}`} alt="" />
-                                <div className={`position-absolute d-flex ${styles.image_group}`}>
-                                    <img src={tether} className={styles.tether} alt="" />
-                                    <img src={rocket} className={styles.rocket} alt="" />
-                                </div>
+                            <div className={styles.top_row}>
+                                <img src={fibido} alt="Fibido" className={styles.fibido_img} />
+                                <img src={tether} alt="Tether" className={styles.tether_img} />
+                                <img src={rocket} alt="Rocket" className={styles.rocket_img} />
                             </div>
-                            <div>
-                                <img src={number4} alt="" />
-                                <img src={earth} alt="" />
-                                <img src={number4} alt="" />
+                            <div className={styles.center_row}>
+                                <img src={number4} alt="Number 4" className={styles.right_num} />
+                                <img src={earth} alt="Earth" className={styles.earth_img} />
+                                <img src={number4} alt="Number 4" className={styles.left_num} />
                             </div>
-                            <div>
-                                <p className={styles.title}>صفحه پیدا نشد!</p>
-                                <div className={styles.button_group}>
+                            <div className={styles.bottom_row}>
+                                <p>صفحه پیدا نشد!</p>
+                                <div className={styles.links_group}>
                                     <a href="#">بازگشت</a>
                                     <a href="#">صفحه اصلی</a>
                                 </div>
                             </div>
                         </div>
+                        <img src={planet} alt="Planet" className={styles.right_bottom_planet} />
+                        <img src={planet} alt="Planet" className={styles.center_bottom_planet} />
+                        <img src={planet} alt="Planet" className={styles.left_bottom_planet} />
+                        <img src={planet} alt="Planet" className={styles.center_top_planet} />
                     </div>
                 </div>
             </div>
