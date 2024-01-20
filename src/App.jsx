@@ -14,6 +14,7 @@ import Whyjoorchin from "../src/pages/Whyjoorchin";
 import Blog from "../src/pages/Blog";
 import Loading from "../src/components/Loading/Loading";
 import { useEffect, useState } from 'react';
+import SingleCourse from './pages/SingleCourse';
 import Page404 from './components/Page404/Page404';
 function App() {
   const [loading, setLoading] = useState(true)
@@ -37,6 +38,7 @@ function App() {
           <Route path='WhyJoorchin' element={<Whyjoorchin/>}/>
           <Route path='Blog' element={<Blog/>}/>
           <Route path='temp' element={<Loading/>}/>
+          <Route path='SingleCourse' element={<SingleCourse />} />
           <Route path="*" element={<Page404/>} />
           </Routes>
         </BrowserRouter>

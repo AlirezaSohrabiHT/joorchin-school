@@ -1,0 +1,27 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important; 
+    box-sizing: border-box !important;
+}
+.course_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.right_box > h2 {
+    font-size: 55px;
+    color: var(--white);
+}
+.course_name_eng {
+    font-size: 25px;
+    color: var(--green);
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+.course_badge {
+    display: inline-block;
+    font-size: 8px;
+    background: var(--purple);
+    /* padding: 10px 20px; */
+    border-radius: 25px;
+}
