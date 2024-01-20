@@ -1,7 +1,15 @@
+.single_course_container {
+    padding: 64px 128px;
+}
 .course_info {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    position: relative;
+}
+.right_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 .right_box > h2 {
     font-size: 55px;
@@ -23,4 +31,56 @@
     text-align: center;
     line-height: 26px;
     border-radius: 25px;
+}
+.left_box {
+    flex: 1;
+}
+.course_teacher {
+    font-size: 40px;
+    color: var(--green);
+}
+.course_description {
+    font-size: 25px;
+    color: var(--white);
+}
+.icons_group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--white);
+}
+.icons_group > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.course_registration {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.course_registration > div {
+    text-align: center;
+    position: relative;
+}
+.course_registration > div > p {
+    margin: 0;
+    color: var(--white);
+    font-size: 23px;
+}
+.course_registration > div > a {
+    display: inline-block;
+    width: 171px;
+    height: 60.85px;
+    line-height: 60.85px;
+    text-align: center;
+    background: var(--green);
+    border-radius: 10px;
+    font-size: 30px;
+}
+.hand_img {
+    width: 95.79px;
+    height: 147px;
+    transform: translate(-168px, 30px);
 }
