@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './Page404.module.css';
+import { useNavigate } from "react-router-dom";
 import earth from '../../assets/planet-13.svg';
 import number4 from '../../assets/4-left.svg';
 import fibido from '../../assets/fibido.svg';
@@ -8,6 +9,15 @@ import rocket from '../../assets/Rocket.svg';
 import planet from '../../assets/planet-14.svg';
 
 const Page404 = () => {
+    const navigate = useNavigate();
+
+    const handlebackpage = () => {
+        navigate(-1);
+    }
+    
+    const handlebackhome = () => {
+        navigate("/");
+    }
 
     return (
         <>
@@ -28,8 +38,8 @@ const Page404 = () => {
                             <div className={styles.bottom_row}>
                                 <p>صفحه پیدا نشد!</p>
                                 <div className={styles.links_group}>
-                                    <a href="#">بازگشت</a>
-                                    <a href="#">صفحه اصلی</a>
+                                    <a onClick={() => handlebackpage()}>بازگشت</a>
+                                    <a onClick={() => handlebackhome()}>صفحه اصلی</a>
                                 </div>
                             </div>
                         </div>
