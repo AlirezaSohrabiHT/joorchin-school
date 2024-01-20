@@ -13,7 +13,13 @@ const SingleCourse = () => {
                                 <p className={styles.course_name_eng}>visual identity design</p>
                                 <p className={styles.course_badge}>سطح مقدماتی</p>
                             </div>
-                            <div className={styles.left_box}>مدرس: عطیه جلیلی</div>
+                            <div className={styles.left_box}>
+                                <p>مدرس: عطیه جلیلی</p>
+                                <p>در این دوره شما با مفاهیم بنیادین برند آشنا شده و اجزای یک هویت را بصری درک می‌کنید.</p>
+                                <div className={styles.icons_group}>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
