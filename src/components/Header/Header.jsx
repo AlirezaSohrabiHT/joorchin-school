@@ -65,6 +65,8 @@ const Header = (props) => {
       }
     };
     const Search = styled('div')(({ theme }) => ({
+        width: '218px',
+        height: '37px',
         position: 'relative',
         borderRadius: '25px',
         border: '2px solid #fff',
@@ -77,33 +79,11 @@ const Header = (props) => {
         },
       }));
       
-      const SearchIconWrapper = styled('div')(({ theme }) => ({
-        padding: theme.spacing(0, 2),
-        height: '100%',
-     
-        position: 'absolute',
-        pointerEvents: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        left: '0',
-      }));
-      
       const StyledInputBase = styled(InputBase)(({ theme }) => ({
         color: 'inherit',  
         width: '100%',
-        '& .MuiInputBase-input': {
-          padding: theme.spacing(1, 1, 1, 0),
-          // vertical padding + font size from searchIcon
-          paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-          transition: theme.transitions.create('width'),
-          [theme.breakpoints.up('sm')]: {
-            width: '12ch',
-            '&:focus': {
-              width: '20ch',
-            },
-          },
-        },
+        fontSize: '13px',
+        padding: '2px',
       }));
     return (
         <div className={styles.back}>
@@ -160,13 +140,16 @@ const Header = (props) => {
               ))}
               
             </Box>
-            <Search>
+            {/* <Search>
             <StyledInputBase
               sx={{fontFamily: 'Yekan-Bakh-Regular'}}
               placeholder="دنبال چی میگردی ؟"
               inputProps={{ 'aria-label': 'search' }}
             />
-          </Search>
+          </Search> */}
+          <div className={styles.search_container}>
+            <input placeholder="دنبال چی می‌گردی ؟" />
+          </div>
           <img className={styles.search_img} src={search} href="search"></img>
           </Toolbar>
         </Container>

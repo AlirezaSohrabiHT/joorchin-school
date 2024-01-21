@@ -61,7 +61,9 @@
     font-size: 60px;
 }
 .certificate_container{
-    margin-top: 95px;
+    margin: 95px 0;
+    display: flex;
+    align-items: center;
 }
 .certificate{
     width: 100%;
@@ -70,13 +72,13 @@
 .certificate_text_container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     text-align: justify;
     color: var(--white);
 }
 .certificate_title{
     display: flex;
     justify-content: center;
-    text-align: center;
     font-size: 2.5rem;
     text-align: justify;
     color: var(--purple);
@@ -101,8 +103,6 @@
     gap: 24px;
 }
 .blog_title{
-    margin-top: 83px;
-
     color: #00EA6B;
     font-size: 50px;
 }
@@ -115,10 +115,8 @@
 }
 .course_text_container{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 .blog_text_container{
     display: flex;

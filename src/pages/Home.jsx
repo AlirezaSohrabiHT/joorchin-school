@@ -82,7 +82,7 @@ const Home = () => {
                         <p className={styles.blog_title}>متن راجع به وبلاگ</p>
                         <p className={styles.blog_desciption}>متن متن متن متن متن راجع به وبلاگ</p>
                     </div>
-                        <Button className={`${styles.blog_button}`} variant="contained">مشاهده همه بلاگ ها</Button>
+                        <Button className={`${styles.blog_button}`} variant="contained">مشاهده همه مطالب</Button>
                 </div>
                     <div className={`col-12 ${styles.blog_cards}`}>
                         <Blog_Card/>

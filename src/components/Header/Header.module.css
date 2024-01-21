@@ -19,6 +19,26 @@
     margin-left: 30px;
     cursor: pointer;
 }
+.search_container {
+    margin-left: 14px;
+}
+.search_container > input {
+    padding: 6px;
+    background: var(--dark);
+    border: 2px solid var(--white);
+    outline: none;
+    border-radius: 25px;
+    color: var(--white);
+}
+::placeholder {
+    color: var(--white);
+    opacity: 0.5; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: var(--white);
+    opacity: 0.5;
+  }
 .search_img{
     width: 37px;
     height: 78;
