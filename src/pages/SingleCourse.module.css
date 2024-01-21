@@ -4,6 +4,7 @@
 .course_info {
     display: flex;
     position: relative;
+    margin-bottom: 64px;
 }
 .right_box {
     display: flex;
@@ -31,6 +32,7 @@
     text-align: center;
     line-height: 26px;
     border-radius: 25px;
+    font-family: "Yekan-Bakh-Regular";
 }
 .left_box {
     flex: 1;
@@ -42,12 +44,14 @@
 .course_description {
     font-size: 25px;
     color: var(--white);
+    font-family: "Yekan-Bakh-Regular";
 }
 .icons_group {
     display: flex;
     flex-direction: column;
     gap: 12px;
     color: var(--white);
+    font-family: "Yekan-Bakh-Regular";
 }
 .icons_group > div {
     display: flex;
@@ -82,5 +86,100 @@
 .hand_img {
     width: 95.79px;
     height: 147px;
-    transform: translate(-168px, 30px);
+    position: absolute;
+    left: -35%;
+    top: 0;
+    animation: customAni 12s ease-in-out 0s infinite normal none;
+}
+
+.course_details {
+    padding: 50px 100px;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.single_course_container .course_title {
+    color: var(--purple);
+    font-size: 50px;
+}
+
+.single_course_container .course_des {
+    color: var(--white);
+    font-size: 25px;
+    font-family: "Yekan-Bakh-Regular";
+}
+.course_details .course_layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.course_details .course_layout_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course_details ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+}
+
+.course_topic {
+    margin-bottom: 64px;
+}
+
+.course_topic_title {
+    font-size: 40px;
+    color: var(--white) !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Yekan-Bakh-Regular";
+}
+.course_topic_accordion {
+    padding: 24px 64px;
+    border: 2px solid #fff;
+    border-radius: 25px !important;
+}
+.course_topic_des {
+    font-size: 24px;
+    color: var(--white) !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Yekan-Bakh-Regular";
+}
+
+@keyframes customAni {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+    10% {
+      transform: rotate(8deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+  
+    80% {
+      transform: rotate(-8deg);
+    }
+  
+    90% {
+      transform: rotate(8deg);
+    }
 }
