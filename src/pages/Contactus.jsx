@@ -1,5 +1,5 @@
 import { Email, EmailOutlined, Instagram, LinkedIn, Telegram, WhatsApp, X } from "@mui/icons-material";
-import React from "react";
+import React, { useState } from "react";
 import background from "../assets/Contact-us.svg";
 import hand from "../assets/click-hand.svg";
 import whatsapp from '../assets/ic_twotone-whatsapp.svg';
@@ -12,6 +12,9 @@ import listItem from '../assets/Ellipse 2.svg';
 
 import styles from "./Contactus.module.css"
 const Contactus = () => {
+    const [userName, setUserName] = useState();
+    const [userEmail, setUserEmail] = useState();
+    const [userMessage, setUserMessage] = useState();
 
     return(
         <>
@@ -90,18 +93,19 @@ const Contactus = () => {
                                         <div>
                                             <label htmlFor="">نام شما:</label>
                                             <br />
-                                            <input type="text" />
+                                            <input type="text" onChange={(e) => setUserName(e.target.value)} />
                                         </div>
                                         <div>
                                             <label htmlFor="">آدرس ایمیل:</label>
                                             <br />
-                                            <input type="text" />
+                                            <input type="text" onChange={(e) => setUserEmail(e.target.value)} />
                                         </div>
                                     </div>
                                     <div>
                                         <label htmlFor="">متن پیام:</label>
                                             <br />
-                                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                                            <textarea name="" id="" cols="30" rows="5"  onChange={(e) => setUserMessage(e.target.value)}></textarea>
+                                            <button onClick={() => console.log(userName, userEmail, userMessage)}>Click</button>
                                     </div>
                                 </div>
                             </div>
