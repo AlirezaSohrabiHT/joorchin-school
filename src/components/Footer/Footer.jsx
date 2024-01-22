@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.back}>
         <div className={`container ${styles.footer_container}`}>
             <div className={`row`}>
-                <div className={`col-5 ${styles.footer_right}`}>
+                <div className={`col-md-5 col-12 ${styles.footer_right}`}>
                     <div className={styles.footer_menu}>
                         <a>دوره ها</a>
                         <a>مدرسین</a>
@@ -23,10 +23,7 @@ const Footer = () => {
                         قابل وصف نیست ثبتنام کنیدیکهفتهایبهدرآمد برسید.</p>
                     </div>
                 </div>
-                <div className={`col-2`}>
-
-                </div>
-                <div className={`col-5 ${styles.footer_left}`}>
+                <div className={`col-12 col-md-5 ${styles.footer_left}`}>
                     <p>اطلاع از خبر های جدید جورچین آکادمی</p>
                     <input className={styles.footer_input} placeholder="ایمیل خود را وارد کنید" type="email" id="name" name="name" required minlength="4" maxlength="8" size="10" />
                     <div>
@@ -47,7 +44,7 @@ const Footer = () => {
                 <div className={`col-7`}>
 
                 </div>
-                <div className={`col-5 ${styles.footer_copyright_container}`}>
+                <div className={`col-12 col-md-5 ${styles.footer_copyright_container}`}>
                     <a href="https://joorchin.co/">Joorchin Digital Marketing Agency - بازنشر مطالب فقط با ذکر منبع مجاز می‌باشد</a>
                     <img src={joorchin_logo}/>
                 </div>

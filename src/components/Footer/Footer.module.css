@@ -63,7 +63,21 @@ color: var(--white);
     gap: 20px;
 }
 @media only screen and (max-width : 480px) {
-    .back{
-        display: none;
+    .footer_menu {
+        order: 2;
+    }
+    .footer_discription {
+        flex-direction: column;
+        order: 1;
+    }
+    .icon_container {
+        justify-content: center;
+    }
+    .footer_copyright_container {
+        justify-content: center;
+        padding-bottom: 12px;
+    }
+    .footer_copyright_container > img {
+        width: 53px;
     }
 }
