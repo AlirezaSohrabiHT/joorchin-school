@@ -2,6 +2,9 @@
     color: var(--white);
     font-family: 'Yekan-Bakh-Light';
 }
+.footer_box {
+    justify-content: space-between;
+}
 .footer_menu{
     font-family: 'Kaghaz-bold';
     display: flex;

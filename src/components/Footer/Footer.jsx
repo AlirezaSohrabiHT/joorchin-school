@@ -8,7 +8,7 @@ const Footer = () => {
         <>
         <div className={styles.back}>
         <div className={`container ${styles.footer_container}`}>
-            <div className={`row`}>
+            <div className={`row ${styles.footer_box}`}>
                 <div className={`col-md-5 col-12 ${styles.footer_right}`}>
                     <div className={styles.footer_menu}>
                         <a>دوره ها</a>
