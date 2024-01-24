@@ -1,7 +1,7 @@
 .container{
     border: 0.5px solid var(--white);
     display: flex;
-    width: 413px;
+    width: 100%;
     height: 229px;
     border-radius: 10px;
     display: flex;
@@ -10,6 +10,7 @@
     position: relative;
     color: var(--white);
     padding: 15px;
+    box-sizing: border-box;
     
 }
 .container_right{
@@ -19,7 +20,6 @@
     flex-direction: column;
     gap: 8px;
     padding: 0 12px;
-    border-left: 2px var(--white) solid;
 }
 .course_image{
     width: 90px;
@@ -34,22 +34,27 @@
 .container_left .icons_group {
   display: flex;
   gap: 8px;
+  font-family: "ShabnamRegular";
 }
 .course_discription{
     font-size: 12.5px;
-    font-family: 'yekanbakhmedium', sans-serif;
+    font-family: 'Yekan-Bakh-Regular', sans-serif;
 }
 
 .container_left{
   width: 40%;
   height: 100%;
   font-size: 12px;
-  font-family: 'yekanbakhmedium', sans-serif;
+  font-family: 'Yekan-Bakh-Regular', sans-serif;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  border-right: 2px var(--white) solid;
+}
+.container_left > div > p {
+  font-size: 12px;
 }
 .container_left div.icons_group {
   margin-top: 8px;
@@ -72,12 +77,14 @@
   flex-direction: column;
   gap: 4px;
 }
+.course_registration > p {
+  font-family: "ShabnamRegular";
+}
 .button{
   background-color: var(--purple) !important;
 }
 @media only screen and (max-width : 480px) {
   .container{
-    width: 310px;
     height: 172px;
   }
   .course_image{

@@ -24,10 +24,10 @@
 
 @font-face {
   font-family: 'Yekan-Bakh-Hairline';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.ttf') format('truetype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.woff') format('woff');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.eot');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.eot') format('embedded-opentype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.ttf') format('truetype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 01\ Hairline.woff') format('woff');
   font-weight: 100; /* Hairline font weight */
   font-style: normal;
 }
@@ -54,49 +54,72 @@
 
 @font-face {
   font-family: 'Yekan-Bakh-Regular';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.ttf') format('truetype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff') format('woff');
+  src: url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot/');
+  src: url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.eot') format('embedded-opentype'),
+       url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.ttf') format('truetype'),
+       url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 04\ Regular.woff') format('woff');
   font-weight: 400; /* Regular font weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yekan-Bakh-Medium';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.woff') format('woff');
+  src: url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.eot.eot/');
+  src: url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.eot/') format('embedded-opentype'),
+       url('../src/assets/Fonts/Yekan\ Bakh\ FA\ 05\ Medium.woff') format('woff');
   font-weight: 500; /* Medium font weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yekan-Bakh-Bold';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.woff') format('woff');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.eot') format('embedded-opentype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 06\ Bold.woff') format('woff');
   font-weight: 600; /* Bold font weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yekan-Bakh-Heavy';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.woff') format('woff');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.eot');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.eot') format('embedded-opentype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 07\ Heavy.woff') format('woff');
   font-weight: 700; /* Heavy font weight */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yekan-Bakh-Fat';
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.eot');
-  src: url('./assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.eot') format('embedded-opentype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.ttf') format('truetype'),
-       url('./assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.woff') format('woff');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.eot');
+  src: url('../assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.eot') format('embedded-opentype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.ttf') format('truetype'),
+       url('../assets/Fonts/Yekan\ Bakh\ FA\ 08\ Fat.woff') format('woff');
   font-weight: 800; /* Fat font weight */
   font-style: normal;
+}
+
+@font-face {
+  font-family: "ShabnamThin";
+  src: url("../src/assets/Fonts/Shabnam-Thin-FD.eot");
+  src: url('../src/assets/Fonts/Shabnam-Thin-FD.eot') format('embedded-opentype'),
+       url('../src/assets/Fonts/Shabnam--FD.ttf') format('truetype'),
+       url('../src/assets/Fonts/Shabnam-FD.woff') format('woff');
+  font-weight: 400; /* Regular font weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: "ShabnamRegular";
+  src: url("../src/assets/Fonts/Shabnam-FD.eot");
+  src: url('../src/assets/Fonts/Shabnam-FD.eot') format('embedded-opentype'),
+       url('../src/assets/Fonts/Shabnam-FD.ttf') format('truetype'),
+       url('../src/assets/Fonts/Shabnam-FD.woff') format('woff');
+  font-weight: 400; /* Regular font weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: "ShabnamMedium";
+  src: url("assets/Fonts/Shabnam-Medium-FD.eot");
 }
 
 body{

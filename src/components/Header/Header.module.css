@@ -23,12 +23,17 @@
     margin-left: 14px;
 }
 .search_container > input {
-    padding: 6px;
+    width: 218px;
+    height: 37px;
+    box-sizing: border-box;
+    padding: 6px 10px;
     background: var(--dark);
     border: 2px solid var(--white);
     outline: none;
     border-radius: 25px;
     color: var(--white);
+    font-family: "Yekan-Bakh-Regular";
+    font-size: 13px;
 }
 ::placeholder {
     color: var(--white);

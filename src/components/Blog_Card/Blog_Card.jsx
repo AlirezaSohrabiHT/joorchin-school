@@ -14,7 +14,7 @@ const Blog_Card = () => {
         <>
         <div className={`${styles.container} ${styles.animatedContainer}`}>
             <div className={styles.container_right}>
-                <img className={styles.blog_image} src={image}/>
+                <img src={image} className={styles.blog_image}/>
                 <h2 className={styles.blog_title}>Scrum چیست؟</h2>
             </div>
             <div className={styles.bottom_container}>

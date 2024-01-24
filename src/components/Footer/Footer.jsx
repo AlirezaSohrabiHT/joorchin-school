@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 import joorchin_logo from "../../assets/Joorchin_logo.svg"
 import logo from "../../assets/Logo.svg"
-import { X , Telegram , Instagram , Email , WhatsApp, Margin } from "@mui/icons-material";
+import { X , Telegram , Instagram , Email , WhatsApp, Margin, LinkedIn } from "@mui/icons-material";
 const Footer = () => {
     return(
         <>
@@ -34,6 +34,7 @@ const Footer = () => {
                        <a href="https://www.instagram.com/joorchin.school?igsh=NTc4MTIwNjQ2YQ=="><Instagram/></a> 
                         <Email/>
                         <WhatsApp/> 
+                        <LinkedIn />
                       </div>
   
                     </div>

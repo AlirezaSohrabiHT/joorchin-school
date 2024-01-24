@@ -1,6 +1,6 @@
 .footer_container{
     color: var(--white);
-    font-family: 'Yekan-Bakh-Light';
+    font-family: 'Yekan-Bakh-Regular';
 }
 .footer_box {
     justify-content: space-between;
@@ -16,7 +16,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    font-family: 'Yekan-Bakh-Light',Arial, Helvetica, sans-serif;
+    font-family: 'Yekan-Bakh-Regular',Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
 .back{
@@ -49,7 +49,7 @@
 .footer_input{
     direction: rtl;
     border-radius: 10px;
-    padding: 5px;
+    padding: 8px 12px;
     background-color: #C5C5C580;
     color: var(--white);
     border: none;

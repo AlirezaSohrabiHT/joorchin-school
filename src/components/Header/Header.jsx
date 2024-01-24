@@ -64,27 +64,6 @@ const Header = (props) => {
           // Handle default case or do nothing
       }
     };
-    const Search = styled('div')(({ theme }) => ({
-        width: '218px',
-        height: '37px',
-        position: 'relative',
-        borderRadius: '25px',
-        border: '2px solid #fff',
-        backgroundColor: '#333',
-        marginLeft: "37px",
-        width: '100%',
-        [theme.breakpoints.up('sm')]: {
-          marginLeft: theme.spacing(1),
-          width: 'auto',
-        },
-      }));
-      
-      const StyledInputBase = styled(InputBase)(({ theme }) => ({
-        color: 'inherit',  
-        width: '100%',
-        fontSize: '13px',
-        padding: '2px',
-      }));
     return (
         <div className={styles.back}>
         <AppBar position="static" className={`container ${styles.container}`}>
@@ -140,13 +119,6 @@ const Header = (props) => {
               ))}
               
             </Box>
-            {/* <Search>
-            <StyledInputBase
-              sx={{fontFamily: 'Yekan-Bakh-Regular'}}
-              placeholder="دنبال چی میگردی ؟"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search> */}
           <div className={styles.search_container}>
             <input placeholder="دنبال چی می‌گردی ؟" />
           </div>
